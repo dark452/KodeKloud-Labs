@@ -1,34 +1,34 @@
 # devops-linux-more-commands
 
-1.- Which user is current user on host01 server?
+1.- Which user is current user on `host01` server?
 
 ```bash
 thor@host01 ~$ whoami 
 thor
-`
+```
 
-2.- What is id of thor user?
+2.- What is id of `thor` user?
 
 ```bash
 thor@host01 ~$ id
 uid=1001(thor) gid=1001(thor) groups=1001(thor),10(wheel)
-`
+```
 
-3.- Which command you will use to switch to ansible user?
+3.- Which command you will use to switch to `ansible` user?
 
 ```bash
 su ansible
-`
+```
 
-4.- Which command you will use to login to other server with IP 172.16.238.3 and thor user?
+4.- Which command you will use to login to other server with IP `172.16.238.3` and `thor` user?
 
 ```bash
 thor@host01 ~$ ssh thor@172.16.238.3
-`
+```
 
-5.- Which of the following files is present in the /root directory?
+5.- Which of the following files is present in the `/root` directory?
 
-Note: Normal user doesn't have permission to view files under /root directory so you will have to gain higher privileges to see files under the /root.
+Note: Normal user doesn't have permission to view files under `/root` directory so you will have to gain higher privileges to see files under the `/root`.
 
 ```bash
 thor@host01 ~$ sudo su
@@ -50,17 +50,15 @@ dr-xr-x--- 1 root root 4.0K Jun 29 01:05 .
 drwx------ 1 root root 4.0K Jun 29 02:13 .ssh
 drwx------ 2 root root 4.0K Jun 29 02:13 .terminal_logs
 dr-xr-xr-x 1 root root 4.0K Jun 29 02:21 ..
-
-`
+```
 
 6.- Which command can't be used to download file over internet?
 
-- curl
-- **ping**
-- wget
+- [ ] `curl`
+- [x] **`ping`**
+- [ ] `wget`
 
 7.- Download the target file to `host01`.
-
 
 Target file name: `dummy.pdf`
 
@@ -92,9 +90,9 @@ drwxr-xr-x 1 root root 4.0K Apr  2 15:14 ..
 drwx------ 1 thor thor 4.0K Jun 29 02:24 .
 thor@host01 ~$ pwd
 /home/thor
-`
+```
 
-10.- Where can you find OS information of the Linux servers?
+8.- Where can you find OS information of the Linux servers?
 
 ```bash
 /home/thor
@@ -113,11 +111,11 @@ HOME_URL="https://centos.org/"
 BUG_REPORT_URL="https://issues.redhat.com/"
 REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux 9"
 REDHAT_SUPPORT_PRODUCT_VERSION="CentOS Stream"
-`
+```
 
-11.- Which OS is running on host01 server?
+9.- Which OS is running on `host01` server?
 
 From previous output is CentOS Stream
 
-12.- Which version of the CentOS is running on the host01 server?
+10.- Which version of the CentOS is running on the `host01` server?
 From previous output is CentOS Stream 9
